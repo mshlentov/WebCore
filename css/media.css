@@ -1,0 +1,142 @@
+@media (min-width: 768px) {
+
+  .header__body {
+  padding: 19px 24px;
+  }
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo::before {
+    content: "";
+    height: 32px;
+    width: 2px;
+    background: #EAEAEA;
+    border-radius: 1px;
+    margin-right: 20px;
+  }
+
+  .header__connect {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__interaction {
+    margin-left: 0;
+  }
+
+  .main__title::before {
+  margin-right: 20px;
+  }
+
+  .main__slideMenu {
+    padding-left: 24px;
+  }
+
+  .main__description {
+    display: flex;
+    padding: 0 24px;
+  }
+
+  .description__body {
+    margin-right: 48px;
+  }
+
+  .description__content {
+    padding: 0;
+  }
+
+  .description__content_hidden {
+  display: block;
+  }
+
+  .description__readmore {
+    padding: 0;
+  }
+
+  .description__image {
+    width: 360px;
+    height: 208px;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 1120px) {
+
+  .main {
+    padding-top: 42px;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .main__title {
+    margin-bottom: 8px;
+  }
+
+  .main__title::before {
+  margin-right: 30px;
+  }
+
+  .main__interaction {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  }
+
+  .interaction__status {
+    margin-right: 32px;
+  }
+
+  .main__slideMenu {
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 10px;
+  }
+
+  .slideMenu__items {
+    flex-wrap: wrap;
+  }
+
+  .slideMenu__item {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+
+  .slideMenu__item:first-child {
+    margin-left: 0px;
+  }
+
+  .main__description {
+    padding: 0 32px;
+  }
+
+  .interaction__title {
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    color: #1B1C21;
+    margin-right: 8px;
+    font-weight: 500;
+  }
+
+  .interaction__request {
+    margin-right: 32px;
+  }
+
+  .description__body {
+    padding-top: 10px;
+  }
+
+  .description__image {
+    width: 531px;
+    height: 307px;
+  }
+
+  .description__span_hidden {
+    display: inline;
+  }
+}
