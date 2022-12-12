@@ -1,0 +1,143 @@
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100vh;
+    position: fixed;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+.menu__header {
+    display: flex;
+    padding: 19px 24px;
+    padding-bottom: 0;
+    margin-bottom: 46px;
+    align-items: center;
+    background: #fff;
+}
+
+.menu__close, 
+.menu__search,
+.menu__call,
+.menu__chat,
+.menu__profile {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #FF3E79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__close {
+    margin-right: 17px;
+}
+
+.menu__logo {
+    margin-right: auto;
+}
+
+.menu__items {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu__item {
+    padding-left: 24px;
+    margin-bottom: 32px;
+    color: #1B1C21;
+    font-size: 16px;
+    font-family: 'TT Lakes';
+}
+
+.menu__item_actived {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 28px;
+}
+
+.menu__item_actived::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 32px;
+    background: #41F6D7;
+    border-radius: 0px 4px 4px 0px;
+    margin-right: 20px;
+  }
+
+.menu__footer {
+    margin-top: auto;
+    padding-left: 24px;
+    padding-bottom: 32px;
+}
+
+.menu__interaction {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.menu__call, 
+.menu__chat {
+    margin-right: 16px;
+}
+
+.menu__chat {
+    padding-top: 11px;
+    padding-bottom: 9px;
+    display: block;
+}
+
+.menu__email {
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-weight: 600;
+    color: #1B1C21;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.menu__phone {
+    font-family: 'TT Lakes';
+    font-size: 24px;
+    color: #1B1C21;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.menu__lang {
+    background: none;
+    border: none;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    color: #1B1C21;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    margin-right: 7px;
+}
+
+.menu__lang:last-child {
+    margin-right: 0;
+}
+
+.menu__lang_actived {
+    color: #7E7E82;
+}
+
+.menu__lang:hover, .menu__call:hover, .menu__chat:hover, .menu__profile:hover, .menu__close:hover, .menu__search:hover {
+    transition: 1s;
+    opacity: 0.5;
+}

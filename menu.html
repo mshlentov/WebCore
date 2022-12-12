@@ -11,21 +11,50 @@
 </head>
 <body>
     <section class="menu">
-        <header class="menu__header"></header>
+        <header class="menu__header">
+            <button class="menu__close">
+                <img src="images/close-icon.svg" alt="Иконка закрытия">
+            </button>
+            <div class="menu__logo">
+                <a href="#">
+                    <img src="images/logo.svg" alt="Логотип CPS">
+                </a>
+            </div>
+            <button class="menu__search">
+                <img src="images/search-icon.svg" alt="Иконка поиска">
+            </button>
+        </header>
         <main class="menu__main">
             <ul class="menu__items">
-                <li class="menu__item">Ремонт техники</li>
-                <li class="menu__item">Услуги и сервисы</li>
-                <li class="menu__item">Корпоративным клиентам</li>
-                <li class="menu__item">Продавцам техники</li>
-                <li class="menu__item">Партнерам</li>
-                <li class="menu__item">Производителям</li>
-                <li class="menu__item">Наши сервисные центры</li>
-                <li class="menu__item">Контакты</li>
+                <li class="menu__item menu__item_actived"><a href="#">Ремонт техники</a></li>
+                <li class="menu__item"><a href="#">Услуги и сервисы</a></li>
+                <li class="menu__item"><a href="#">Корпоративным клиентам</a></li>
+                <li class="menu__item"><a href="#">Продавцам техники</a></li>
+                <li class="menu__item"><a href="#">Партнерам</a></li>
+                <li class="menu__item"><a href="#">Производителям</a></li>
+                <li class="menu__item"><a href="#">Наши сервисные центры</a></li>
+                <li class="menu__item"><a href="#">Контакты</a></li>
             </ul>
         </main>
         <footer class="menu__footer">
-            
+            <div class="menu__interaction">
+                <button class="menu__call">
+                    <img src="images/phone-icon.svg">
+                </button>
+                <button class="menu__chat">
+                    <img src="images/message-icon.svg">
+                </button>
+                <button class="menu__profile">
+                    <img src="images/profile-icon.svg">
+                </button>
+            </div>
+            <p class="menu__email">mail@cps.com</p>
+            <p class="menu__phone">8 800 890 8900</p>
+            <div class="menu__changeLang">
+                <button class="menu__lang menu__lang_actived">RU</button>
+                <button class="menu__lang">EN</button>
+                <button class="menu__lang">CH</button>
+            </div>
         </footer>
     </section>
 </body>
