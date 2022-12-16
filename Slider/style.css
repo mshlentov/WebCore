@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background: #F8F8F8;
+}
+
+.main {
+    overflow-x:hidden;  /*для горизонтального*/
+}
+
+.main__header {
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    padding: 16px;
+    border-top: 1px solid #D9FFF5;
+    margin-bottom: 16px;
+}
+
+.main__title {
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 24px;
+    color: #7E7E82;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.main__items {
+    display: flex;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.main__item {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    padding: 20px 16px;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+}
+
+.swiper-container {
+    width: 240px;
+}
+
+.swiper-slide {
+    box-sizing: border-box;
+}
+
+.swiper-pagination {
+    bottom: auto !important;
+}
+
+.item__link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__buttonIcon {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.item__buttonIcon:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(315deg);
+    right: 33px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #FF3E79;
+    padding: 3px;
+}
+
+/* Variant 2
+.item__buttonIcon:after {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 10px;
+    margin: auto;
+    transform: rotate(315deg);
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #FF3E79;
+}
+*/
+
+.swiper-pagination-bullet {
+    background-color: #DDDDDD;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    margin: 0 !important;
+    margin-right: 12px !important;
+}
+
+.swiper-pagination-bullet:last-child {
+    margin-right: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.main__buttonShowAll {
+    background: none;
+    border: none;
+    display: none;
+}
