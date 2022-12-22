@@ -13,14 +13,11 @@ body {
     overflow-x:hidden;  /*для горизонтального*/
 }
 
-.main__header {
+.main__title {
     background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
     padding: 16px;
     border-top: 1px solid #D9FFF5;
     margin-bottom: 16px;
-}
-
-.main__title {
     font-family: 'TT Lakes';
     font-size: 16px;
     line-height: 24px;
